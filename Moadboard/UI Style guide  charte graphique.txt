@@ -1,0 +1,128 @@
+Front-end Style Guide
+
+
+
+Mobile: 375px
+height: 5375px;
+width: 414px;
+left: 1862px;
+top: -731px;
+border-radius: 0px;
+
+COLOR
+background: #F5F9FB;
+ 
+TEXT
+height: 35px;
+width: 246px;
+left: 27px;
+top: 361px;
+border-radius: nullpx;
+
+TYPOGRAPHY
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 42px;
+letter-spacing: 0em;
+text-align: center;
+COLOR
+background: #0071AC;
+
+ICONE
+height: 66px;
+width: 65px;
+left: 310px;
+top: 5227px;
+border-radius: 0px;
+
+
+
+Tablette: 768px
+height: 5970px;
+width: 834px;
+left: 681px;
+top: -752px;
+border-radius: 0px;
+
+COLOR
+background: #F5F9FB;
+
+TEXT
+height: 57px;
+width: 104px;
+left: 139px;
+top: 20px;
+border-radius: nullpx;
+
+TYPOGRAPHY
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 42px;
+letter-spacing: 0em;
+text-align: center;
+
+COLLOR
+background: #0071AC;
+
+ICONE
+height: 66px;
+width: 65px;
+left: 701px;
+top: 5800px;
+border-radius: 0px;
+
+
+
+Desktop: 1440px
+Desktop;
+Colors:
+0071AC:royal blue
+56CCF2:brt.blue
+000000:black
+E4E4E4:metalic ash
+E2F5FF:baby blue
+F5F9FB:lightblue
+background: #0071AC;
+
+
+Typography:
+font-family: Cairo;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 67px;
+letter-spacing: 0em;
+text-align: center;
+
+
+body:
+cairo text
+
+w 1440   H5120
+fixed size
+text align center
+align top
+
+
+
+sizes:30px
+height: 57px;
+width: 128px;
+left: 784px;
+top: 32px;
+border-radius: nullpx;
+
+
+Icons:
+iOS Glyph →Logos → Social Media→ 
+download:
+PNG
+height: 66px;
+width: 67px;
+left: 1029px;
+top: 4964px;
+border-radius: 0px;

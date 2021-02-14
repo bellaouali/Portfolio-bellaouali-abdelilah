@@ -1,0 +1,184 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* star header  */
+
+.logo {
+    /*  image logo header*/
+    width: 140px;
+    height: 4rem;
+}
+
+#navbar {
+    /* section list navbar and  logo image */
+    background-color: #F5F9FB;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li a {
+    cursor: pointer;
+    font-size: 25px;
+    color: #56CCF2;
+    text-decoration: none;
+    padding: 8px 30px;
+}
+
+ul li a:hover {
+    background-color: #0071AC;
+}
+
+label {
+    margin: 20PX 40px 0 0;
+    font-size: 40px;
+}
+
+/* the and header */
+
+/* star hero.section */
+
+#hero {
+    /* image hero */
+    height: 100vh;
+    background-image: url(/img/img1.png);
+    background-position: top center;
+    background-size: cover;
+}
+
+.hero.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h1 {
+    /* text hero */
+    position: relative;
+    width: fit-content;
+    color: #56CCF2;
+    margin-bottom: 40px;
+    font-size: 1.7rem;
+}
+
+#hero h1 span {
+    /*  parent span animation text and time */
+    position: absolute;
+    height: 6vh; 
+    width: 100%;
+    border-radius: 10px;
+    background-color: #D3F1FA;
+    animation: text_box 5s ease;
+    animation-timing-function: cubic-bezier(1, 0, 0, 5);
+}
+
+/* animation time for span text  */
+
+#hero h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+
+#hero h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+
+#hero h1:nth-child(3) span {
+    animation-delay: 3s;
+}
+
+/* animation span  */
+
+@keyframes text_box {
+    100% {
+        width: 100%;
+        left: 0;
+    }
+    50% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+#hero .botton {
+    /* botton portfoloi */
+    cursor: pointer;
+    border: 1px solid #0071AC;
+    background-color: #D3F1FA;
+    text-decoration: none;
+    color: black;
+    padding: 4px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#hero .botton:hover {
+    color: #56CCF2;
+    background-color: #0071AC;
+}
+
+/* respencive mobail max width */
+
+@media only screen and (max-width: 375px) {
+    ul {
+        height: 700px;
+        flex-direction: column;
+        margin-top: 70px;
+       
+    }
+    ul li {
+        padding: 20px;
+    }
+    ul li a {
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    #hero {
+        /* image hero */
+        display: none;
+    }
+    .logo {
+        width: 75px;
+        height: 4rem;
+    }
+        label {
+            margin: 20PX 40px 0 0;
+            font-size: 40px;
+        }
+    
+}
+
+/* respencive mobail min width */
+
+@media only screen and (min-width: 377px) {
+    label {
+        display: none;
+    }
+}
+
+/* respencive ibad or tablit  */
+
+@media only screen and (max-width: 768px) {
+    ul li a {
+        font-size: 27px;
+        padding: 15px 10px;
+    }
+}
+
+/* the and hero.section */
