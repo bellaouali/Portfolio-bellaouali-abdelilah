@@ -2,6 +2,13 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #F5F9FB;
     font-family: 'Cairo', sans-serif;
 }
 
@@ -16,6 +23,7 @@
 #navbar {
     /* section list navbar and  logo image */
     background-color: #F5F9FB;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -36,7 +44,7 @@ ul li a {
     font-size: 25px;
     color: #56CCF2;
     text-decoration: none;
-    padding: 8px 30px;
+    padding: 8px 20px;
 }
 
 ul li a:hover {
@@ -52,20 +60,22 @@ label {
 
 /* star hero.section */
 
+#hero .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 #hero {
     /* image hero */
+    width: 100%;
     height: 100vh;
     background-image: url(/img/img1.png);
     background-position: top center;
     background-size: cover;
-}
-
-.hero.container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #hero h1 {
@@ -80,12 +90,12 @@ label {
 #hero h1 span {
     /*  parent span animation text and time */
     position: absolute;
-    height: 6vh; 
+    height: 6vh;
     width: 100%;
     border-radius: 10px;
     background-color: #D3F1FA;
-    animation: text_box 5s ease;
-    animation-timing-function: cubic-bezier(1, 0, 0, 5);
+    animation: text_box 3s ease;
+    animation-delay: 1s;
 }
 
 /* animation time for span text  */
@@ -132,53 +142,405 @@ label {
     background-color: #0071AC;
 }
 
-/* respencive mobail max width */
+/* the and hero.section */
 
-@media only screen and (max-width: 375px) {
-    ul {
-        height: 700px;
-        flex-direction: column;
-        margin-top: 70px;
+/* star design section  */
+
+ 
+ .containerr {
+    width: 100%;
+    height: 100vh;
+    background-position:  center;
+    background-size: cover;
+} 
+
+
+.design-top {
+    margin-top: 2rem;
+}
+
+.design-top h1 {
+    color: #9de6ff;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.design-top p {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    width: 60%;
+    font-size: large;
+}
+
+.design-bottom {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.design-item {
+    background-color: #c1edfc;
+    padding: 1rem;
+    width: 46%;
+}
+
+.design-item h2 {
+    margin-top: 4rem;
+}
+
+.design-item p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* the and designe section */
+
+/* star project section */
+
+
+
+.containerrr {
+    /* image hero */
+    width: 100%;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+.project-top {
+    margin-top: 3rem;
+}
+
+.project-titel {
+    margin-top: 2rem;
+    font-size: 10rem;
+    color: #9de6ff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-buttem {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+.cardone h1 {
+    text-align: center;
+    background-color: #c1edfc;
+    font-size: xx-large;
+}
+
+.cardone p {
+    height: 25vh;
+    background-color: #c1edfc;
+    font-size: x-large;
+    text-align: center;
+}
+
+.project-img img {
+    width: 100%;
+    height: 28vh;
+}
+
+/* star about me */
+
+
+
+.containerrrr {
+    width: 100%;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+.about-card {
+    display: flex;
+}
+
+.image {
+    height: 80vh;
+    margin-top: 3rem;
+}
+
+.para {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 7rem;
+}
+
+.para h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: #9de6ff;
+}
+
+/* the and section about me */
+
+/* star the contact me */
+
+
+
+.containero {
+    width: 100%;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+.form-titel {
+    text-align: center;
+    color: #9de6ff;
+    font-size: 10rem;
+}
+
+.form {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+#form .forme {
+    width: 100%;
+    padding: 22px 20px;
+}
+
+.forme-message {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.forme-botten {
+    width: 30%;
+    padding: 22px;
+    cursor: pointer;
+    margin-left: 2.5rem;
+}
+
+.forme-botten:hover {
+    background-color: #56CCF2;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    width: 87%;
+}
+
+ol {
+    display: flex;
+    margin-top: 2rem;
+}
+
+ol li {
+    padding: 10px;
+    list-style: none;
+}
+
+ol li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* star the media qy */
+@media only screen and (max-width: 768px) {
+   .design-bottom{
+       flex-direction: column;
        
-    }
-    ul li {
-        padding: 20px;
-    }
-    ul li a {
-        font-size: 2rem;
-        text-align: center;
-        text-decoration: none;
-    }
-    #hero {
-        /* image hero */
-        display: none;
-    }
-    .logo {
-        width: 75px;
-        height: 4rem;
-    }
-        label {
-            margin: 20PX 40px 0 0;
-            font-size: 40px;
-        }
-    
+   }
+   .firstLine{
+       margin-bottom: 2rem;
+   }
+   .design-top h1 {
+    font-size: 5rem;
+}
+.design-top p {
+    margin-top: 0rem;
+    width: 80%;
+}
 }
 
-/* respencive mobail min width */
-
-@media only screen and (min-width: 377px) {
-    label {
-        display: none;
+@media only screen and (max-width: 768px) {
+    .project-titel {
+        margin-top: 1rem;
+        font-size: 5rem;
+        margin-bottom: 2rem;
     }
 }
-
-/* respencive ibad or tablit  */
 
 @media only screen and (max-width: 768px) {
     ul li a {
-        font-size: 27px;
-        padding: 15px 10px;
+        font-size: 19px;
+    }
+    ul li {
+        padding-right: 0px;
     }
 }
 
-/* the and hero.section */
+@media only screen and (max-width: 768px) {
+    .image {
+        width: 388px;
+        height: 90vh;
+    }
+
+    .para {
+        width: 46%;
+        font-size: 2.5rem;
+        margin-top: 11rem;
+
+    }
+    .para h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo {
+        width: 60px;
+        height: 4rem;
+    }
+    ul li {
+        padding: 8px;
+    }
+    ul li a {
+        font-size: 10px;
+        padding: 20px 1px;
+    }
+    #hero h1 {
+        font-size: 1rem;
+    }
+    #navbar {
+        display: none;
+      }
+}
+
+@media only screen and (max-width: 375px) {
+    .design-top h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .design-top p {
+        width: 86%;
+    }
+    .design-top p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 8px;
+    }
+    .design-item h2 {
+        margin-top: 0rem;
+        font-size: 10px;
+        
+    }
+    .design-item p {
+        font-size: 10px;
+        margin-top: 0rem;
+        text-align: center;    
+        
+    }
+    .firstLine{
+
+        flex-direction: column;
+        margin-bottom: 1px;
+    }
+    .design-item{
+        margin-bottom: 5px;
+        width: 80%;
+        margin-left: 2rem;
+        height: 21vh;
+    }
+    .project-img img{
+        height: 20px;
+        width: 20px;
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    .project-titel {
+        font-size: 2rem;
+        color: #9de6ff;
+        text-align: center;
+    }
+    .cardone p {
+        background-color: #c1edfc;
+        text-align: center;
+        font-size: 15px;
+        height: 12vh;
+    }
+    .project-buttem {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .project-img img {
+        width: 100%;
+        height: 17vh;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .about-card {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        
+}
+
+    .image {
+    width: 197px;
+    height: 405px;
+    margin-left: 5rem;
+}
+    .para h1 {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+}
+    .para {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+    ol li {
+        padding: 4px;
+    }
+   
+}
+
+@media only screen and (max-width: 375px) {
+    .form {
+        flex-direction: column;
+    }
+    #form .forme {
+        padding: 10px 20px;
+    }
+    .forme-message {
+        padding: 40px 40px;
+    }
+    .forme-botten {
+        margin-left: 1px;
+    }
+    #footer {
+        display: none;
+    }
+    .forme-botten {
+        width: 71%;
+    }
+    .form-titel {
+        font-size: 2rem;
+    }
+}
