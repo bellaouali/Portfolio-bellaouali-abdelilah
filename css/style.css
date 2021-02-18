@@ -291,7 +291,7 @@ label {
 
 .containero {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-position: top center;
     background-size: cover;
 }
@@ -323,7 +323,7 @@ label {
     width: 30%;
     padding: 22px;
     cursor: pointer;
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
 }
 
 .forme-botten:hover {
@@ -363,7 +363,7 @@ ol li a {
        margin-bottom: 2rem;
    }
    .design-top h1 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .design-top p {
     margin-top: 0rem;
@@ -374,8 +374,18 @@ ol li a {
 @media only screen and (max-width: 768px) {
     .project-titel {
         margin-top: 1rem;
-        font-size: 5rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
+    }
+    .project-img img {
+        width: 100%;
+        height: 40vh;
+    }
+    .cardone p {
+        height: 35vh;
+        background-color: #c1edfc;
+        font-size: x-large;
+        text-align: center;
     }
 }
 
@@ -401,44 +411,24 @@ ol li a {
 
     }
     .para h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
-}
-
-@media only screen and (max-width: 375px) {
-    .logo {
-        width: 60px;
-        height: 4rem;
-    }
-    ul li {
-        padding: 8px;
-    }
-    ul li a {
-        font-size: 10px;
-        padding: 20px 1px;
-    }
-    #hero h1 {
-        font-size: 1rem;
-    }
-    #navbar {
-        display: none;
-      }
 }
 
 @media only screen and (max-width: 375px) {
     .design-top h1 {
         font-size: 1rem;
-        text-align: center;
+       
     }
+    
     .design-top p {
         width: 86%;
-    }
-    .design-top p {
-        margin: 0 auto;
+        font-size: 10px;
         text-align: center;
-        font-size: 8px;
+        margin: 0 auto;
     }
     .design-item h2 {
+        text-align: center;
         margin-top: 0rem;
         font-size: 10px;
         
@@ -449,6 +439,7 @@ ol li a {
         text-align: center;    
         
     }
+    
     .firstLine{
 
         flex-direction: column;
@@ -468,15 +459,18 @@ ol li a {
 }
 @media only screen and (max-width: 375px) {
     .project-titel {
-        font-size: 2rem;
+        font-size: 1rem;
         color: #9de6ff;
         text-align: center;
     }
     .cardone p {
         background-color: #c1edfc;
         text-align: center;
-        font-size: 15px;
-        height: 12vh;
+        font-size: 10px;
+        height: 20vh;
+    }
+    .cardone h1 {
+        font-size: 10px;
     }
     .project-buttem {
         flex-direction: column;
@@ -485,7 +479,7 @@ ol li a {
     }
     .project-img img {
         width: 100%;
-        height: 17vh;
+        height: 20vh;
     }
 
 }
@@ -503,13 +497,14 @@ ol li a {
     margin-left: 5rem;
 }
     .para h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 0rem;
 }
     .para {
-    width: 100%;
-    font-size: 1.5rem;
+    width: 80%;
+    font-size: 10px;
     margin-top: 1rem;
+    margin: 0 auto;
 }
 }
 
@@ -526,7 +521,7 @@ ol li a {
         flex-direction: column;
     }
     #form .forme {
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
     .forme-message {
         padding: 40px 40px;
@@ -538,9 +533,87 @@ ol li a {
         display: none;
     }
     .forme-botten {
-        width: 71%;
+        width: 50%;
     }
     .form-titel {
-        font-size: 2rem;
+        font-size: 1rem;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-titel {
+        font-size: 3rem;
+    }
+    #footer {
+        margin-top: 19rem;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+    text-align: right;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+
+label {
+    display: none; 
+}
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .logo {
+        width: 60px;
+        height: 4rem;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        margin: 0PX 20px 0 0;
+        font-size: 40px;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        border: 2px solid cornflowerblue;
+        display: block;
+    }
+    #toggle:checked + .menu  {
+        display: block;
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    
+    ul li a {
+        font-size: 23px;
+        padding: 0px 66px;
+    }
+    #hero .container {
+       display: none;
+    }
+
+    
 }
