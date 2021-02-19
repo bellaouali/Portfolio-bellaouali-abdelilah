@@ -107,11 +107,11 @@ label {
 #hero h1 span {
     /*  parent span animation text and time */
     position: absolute;
-    height: 5vh;
+    height: 6vh;
     width: 100%;
     border-radius: 10px;
     background-color: #D3F1FA;
-    animation: text_box 15s ease infinite;
+    animation: text_box 10s ease infinite;
     animation-delay: 1s;
 }
 
@@ -174,12 +174,11 @@ label {
     color: #9de6ff;
     text-align: center;
     font-size: 8rem;
-    animation: text_box 10s ease infinite;
+    animation: text_box 8s ease infinite;
 }
 
 .design-top p {
     margin: 0 auto;
-    margin-top: 2rem;
     text-align: center;
     width: 90%;
     font-size: 2rem;
@@ -233,7 +232,7 @@ label {
     font-size: 8rem;
     color: #9de6ff;
     text-align: center;
-    animation: text_box 10s ease infinite;
+    animation: text_box 8s ease infinite;
 }
 
 .project-buttem {
@@ -265,9 +264,9 @@ label {
 
 /* star about me */
 
-.containerrrr {
+.container {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-position: top center;
     background-size: cover;
 }
@@ -288,18 +287,19 @@ label {
 }
 
 .para h1 {
-    font-size: 4rem;
+    font-size: 8rem;
     margin-bottom: 3rem;
     color: #9de6ff;
+
 }
 
 /* the and section about me */
 
 /* star the contact me */
 
-.containero {
+.container {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-position: top center;
     background-size: cover;
 }
@@ -307,7 +307,9 @@ label {
 .form-titel {
     text-align: center;
     color: #9de6ff;
-    font-size: 10rem;
+    font-size: 8rem;
+    animation: text_box 8s ease infinite;
+
 }
 
 .form {
@@ -361,6 +363,18 @@ ol li a {
     text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* star the media qy */
 
 @media only screen and (max-width: 768px) {
@@ -399,7 +413,7 @@ ol li a {
 
 @media only screen and (max-width: 768px) {
     ul li a {
-        font-size: 19px;
+        font-size: 17px;
     }
     ul li {
         padding-right: 0px;
