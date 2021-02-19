@@ -39,8 +39,8 @@ label {
 
 #navbar {
     /* section list navbar and  logo image */
-    background-color: #F5F9FB;
     position: fixed;
+    background-color: #F5F9FB;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -59,12 +59,13 @@ ul li {
 ul li a {
     cursor: pointer;
     font-size: 25px;
-    color: #56CCF2;
+    color: #0071AC;
     text-decoration: none;
     padding: 8px 20px;
 }
 
 ul li a:hover {
+    color: #56CCF2;
     background-color: #0071AC;
 }
 
@@ -99,7 +100,7 @@ label {
     /* text hero */
     position: relative;
     width: fit-content;
-    color: #56CCF2;
+    color: #0071AC;
     margin-bottom: 40px;
     font-size: 1.7rem;
 }
@@ -112,7 +113,6 @@ label {
     border-radius: 10px;
     background-color: #D3F1FA;
     animation: text_box 10s ease infinite;
-    animation-delay: 1s;
 }
 
 /* animation time for span text  */
@@ -171,7 +171,7 @@ label {
 }
 
 .design-top h1 {
-    color: #9de6ff;
+    color: #0071AC;
     text-align: center;
     font-size: 8rem;
     animation: text_box 8s ease infinite;
@@ -185,8 +185,8 @@ label {
 }
 
 .design-item h2 {
-    margin-top: 2rem;
     text-align: center;
+    color: #0071AC;
 }
 
 .design-bottom {
@@ -212,6 +212,18 @@ label {
     font-size: 1.5rem;
 }
 
+.fas {
+    cursor: pointer;
+    font-size: 40px;
+    color: #0071AC;
+    padding-right: 10px;
+}
+
+.fas:hover {
+    font-size: 50px;
+    color: #002d46;
+}
+
 /* the and designe section */
 
 /* star project section */
@@ -230,7 +242,7 @@ label {
 
 .project-titel {
     font-size: 8rem;
-    color: #9de6ff;
+    color: #0071AC;
     text-align: center;
     animation: text_box 8s ease infinite;
 }
@@ -245,7 +257,7 @@ label {
 .cardone h1 {
     height: 10vh;
     text-align: center;
-    background-color: #c1edfc;
+    background-color: #0071AC;
     font-size: xx-large;
 }
 
@@ -267,7 +279,7 @@ label {
 .container {
     width: 100%;
     height: 100vh;
-    background-position: top center;
+    background-position: center;
     background-size: cover;
 }
 
@@ -289,8 +301,7 @@ label {
 .para h1 {
     font-size: 8rem;
     margin-bottom: 3rem;
-    color: #9de6ff;
-
+    color: #0071AC;
 }
 
 /* the and section about me */
@@ -306,10 +317,9 @@ label {
 
 .form-titel {
     text-align: center;
-    color: #9de6ff;
+    color: #0071AC;
     font-size: 8rem;
     animation: text_box 8s ease infinite;
-
 }
 
 .form {
@@ -337,7 +347,7 @@ label {
 }
 
 .forme-botten:hover {
-    background-color: #56CCF2;
+    background-color: #89c1df;
 }
 
 #footer {
@@ -363,17 +373,17 @@ ol li a {
     text-decoration: none;
 }
 
+.fa {
+    cursor: pointer;
+    font-size: 40px;
+    color: #0071AC;
+    padding-right: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.fa:hover {
+    font-size: 50px;
+    color: #002d46;
+}
 
 /* star the media qy */
 
@@ -388,8 +398,8 @@ ol li a {
         font-size: 3rem;
     }
     .design-top p {
-        margin-top: 0rem;
         width: 80%;
+        font-size: 1rem;
     }
 }
 
@@ -404,7 +414,7 @@ ol li a {
         height: 40vh;
     }
     .cardone p {
-        height: 35vh;
+        height: 30vh;
         background-color: #c1edfc;
         font-size: x-large;
         text-align: center;
@@ -422,8 +432,9 @@ ol li a {
 
 @media only screen and (max-width: 768px) {
     .image {
-        width: 388px;
-        height: 90vh;
+        margin-left: 2rem;
+        width: 344px;
+        height: 91vh;
     }
     .para {
         width: 46%;
@@ -481,10 +492,11 @@ ol li a {
         background-color: #c1edfc;
         text-align: center;
         font-size: 10px;
-        height: 20vh;
+        height: 16vh;
     }
     .cardone h1 {
         font-size: 10px;
+        height: 3vh;
     }
     .project-buttem {
         flex-direction: column;
@@ -554,7 +566,7 @@ ol li a {
         font-size: 3rem;
     }
     #footer {
-        margin-top: 19rem;
+        margin-top: 1rem;
     }
 }
 
