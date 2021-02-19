@@ -16,8 +16,25 @@ body {
 
 .logo {
     /*  image logo header*/
-    width: 140px;
+    width: 180px;
     height: 4rem;
+}
+
+.nav {
+    text-align: right;
+    line-height: 41px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+label {
+    display: none;
+}
+
+#toggle {
+    display: none;
 }
 
 #navbar {
@@ -90,11 +107,11 @@ label {
 #hero h1 span {
     /*  parent span animation text and time */
     position: absolute;
-    height: 6vh;
+    height: 5vh;
     width: 100%;
     border-radius: 10px;
     background-color: #D3F1FA;
-    animation: text_box 3s ease;
+    animation: text_box 15s ease infinite;
     animation-delay: 1s;
 }
 
@@ -146,35 +163,35 @@ label {
 
 /* star design section  */
 
- 
- .containerr {
+.container {
     width: 100%;
     height: 100vh;
-    background-position:  center;
+    background-position: center;
     background-size: cover;
-} 
-
-
-.design-top {
-    margin-top: 2rem;
 }
 
 .design-top h1 {
     color: #9de6ff;
     text-align: center;
-    font-size: 10rem;
+    font-size: 8rem;
+    animation: text_box 10s ease infinite;
 }
 
 .design-top p {
     margin: 0 auto;
     margin-top: 2rem;
     text-align: center;
-    width: 60%;
-    font-size: large;
+    width: 90%;
+    font-size: 2rem;
+}
+
+.design-item h2 {
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .design-bottom {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -191,10 +208,6 @@ label {
     width: 46%;
 }
 
-.design-item h2 {
-    margin-top: 4rem;
-}
-
 .design-item p {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -204,9 +217,7 @@ label {
 
 /* star project section */
 
-
-
-.containerrr {
+.container {
     /* image hero */
     width: 100%;
     height: 100vh;
@@ -219,11 +230,10 @@ label {
 }
 
 .project-titel {
-    margin-top: 2rem;
-    font-size: 10rem;
+    font-size: 8rem;
     color: #9de6ff;
-    margin-bottom: 2rem;
     text-align: center;
+    animation: text_box 10s ease infinite;
 }
 
 .project-buttem {
@@ -234,13 +244,15 @@ label {
 }
 
 .cardone h1 {
+    height: 10vh;
     text-align: center;
     background-color: #c1edfc;
     font-size: xx-large;
 }
 
 .cardone p {
-    height: 25vh;
+    margin-bottom: 10PX;
+    height: 22vh;
     background-color: #c1edfc;
     font-size: x-large;
     text-align: center;
@@ -248,16 +260,14 @@ label {
 
 .project-img img {
     width: 100%;
-    height: 28vh;
+    height: 32vh;
 }
 
 /* star about me */
 
-
-
 .containerrrr {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-position: top center;
     background-size: cover;
 }
@@ -286,8 +296,6 @@ label {
 /* the and section about me */
 
 /* star the contact me */
-
-
 
 .containero {
     width: 100%;
@@ -354,21 +362,21 @@ ol li a {
 }
 
 /* star the media qy */
+
 @media only screen and (max-width: 768px) {
-   .design-bottom{
-       flex-direction: column;
-       
-   }
-   .firstLine{
-       margin-bottom: 2rem;
-   }
-   .design-top h1 {
-    font-size: 3rem;
-}
-.design-top p {
-    margin-top: 0rem;
-    width: 80%;
-}
+    .design-bottom {
+        flex-direction: column;
+    }
+    .firstLine {
+        margin-bottom: 2rem;
+    }
+    .design-top h1 {
+        font-size: 3rem;
+    }
+    .design-top p {
+        margin-top: 0rem;
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -403,12 +411,10 @@ ol li a {
         width: 388px;
         height: 90vh;
     }
-
     .para {
         width: 46%;
         font-size: 2.5rem;
         margin-top: 11rem;
-
     }
     .para h1 {
         font-size: 3rem;
@@ -418,9 +424,7 @@ ol li a {
 @media only screen and (max-width: 375px) {
     .design-top h1 {
         font-size: 1rem;
-       
     }
-    
     .design-top p {
         width: 86%;
         font-size: 10px;
@@ -431,32 +435,28 @@ ol li a {
         text-align: center;
         margin-top: 0rem;
         font-size: 10px;
-        
     }
     .design-item p {
         font-size: 10px;
         margin-top: 0rem;
-        text-align: center;    
-        
+        text-align: center;
     }
-    
-    .firstLine{
-
+    .firstLine {
         flex-direction: column;
         margin-bottom: 1px;
     }
-    .design-item{
+    .design-item {
         margin-bottom: 5px;
         width: 80%;
         margin-left: 2rem;
         height: 21vh;
     }
-    .project-img img{
+    .project-img img {
         height: 20px;
         width: 20px;
     }
-
 }
+
 @media only screen and (max-width: 375px) {
     .project-titel {
         font-size: 1rem;
@@ -481,39 +481,34 @@ ol li a {
         width: 100%;
         height: 20vh;
     }
-
 }
 
 @media only screen and (max-width: 375px) {
     .about-card {
         flex-direction: column;
         flex-direction: column-reverse;
-        
-}
-
+    }
     .image {
-    width: 197px;
-    height: 405px;
-    margin-left: 5rem;
-}
+        width: 197px;
+        height: 405px;
+        margin-left: 5rem;
+    }
     .para h1 {
-    font-size: 1rem;
-    margin-bottom: 0rem;
-}
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
     .para {
-    width: 80%;
-    font-size: 10px;
-    margin-top: 1rem;
-    margin: 0 auto;
+        width: 80%;
+        font-size: 10px;
+        margin-top: 1rem;
+        margin: 0 auto;
+    }
 }
-}
-
 
 @media only screen and (max-width: 768px) {
     ol li {
         padding: 4px;
     }
-   
 }
 
 @media only screen and (max-width: 375px) {
@@ -547,35 +542,6 @@ ol li a {
     #footer {
         margin-top: 19rem;
     }
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-.nav {
-    text-align: right;
-    line-height: 70px;
-}
-.menu {
-    margin: 0 30px 0 0;
-}
-
-label {
-    display: none; 
-}
-#toggle {
-    display: none;
 }
 
 @media only screen and (max-width: 375px) {
@@ -598,22 +564,18 @@ label {
         border: 2px solid cornflowerblue;
         display: block;
     }
-    #toggle:checked + .menu  {
+    #toggle:checked+.menu {
         display: block;
     }
-    ul{
-      display: flex;
-      flex-direction: column;
-      
+    ul {
+        display: flex;
+        flex-direction: column;
     }
-    
     ul li a {
         font-size: 23px;
         padding: 0px 66px;
     }
     #hero .container {
-       display: none;
+        display: none;
     }
-
-    
 }
