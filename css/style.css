@@ -149,7 +149,7 @@ label {
     background-color: #D3F1FA;
     text-decoration: none;
     color: black;
-    padding: 4px 50px;
+    padding: 15px 50px;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -257,8 +257,10 @@ label {
 .cardone h1 {
     height: 10vh;
     text-align: center;
-    background-color: #0071AC;
+    color: #0071AC;
+    background-color: #c1edfc;
     font-size: xx-large;
+    margin-bottom: 5px;
 }
 
 .cardone p {
@@ -290,6 +292,7 @@ label {
 .image {
     height: 80vh;
     margin-top: 3rem;
+    margin-left: 5rem;
 }
 
 .para {
@@ -371,13 +374,14 @@ ol li {
 ol li a {
     color: black;
     text-decoration: none;
+    font-size: 30px;
 }
 
 .fa {
     cursor: pointer;
     font-size: 40px;
     color: #0071AC;
-    padding-right: 10px;
+    padding-right: 28px;
 }
 
 .fa:hover {
@@ -386,7 +390,7 @@ ol li a {
 }
 
 /* star the media qy */
-
+           /* design tabl */
 @media only screen and (max-width: 768px) {
     .design-bottom {
         flex-direction: column;
@@ -402,7 +406,7 @@ ol li a {
         font-size: 1rem;
     }
 }
-
+           /* media project tabl */
 @media only screen and (max-width: 768px) {
     .project-titel {
         margin-top: 1rem;
@@ -429,12 +433,12 @@ ol li a {
         padding-right: 0px;
     }
 }
-
+           /* media about me tabl */
 @media only screen and (max-width: 768px) {
     .image {
         margin-left: 2rem;
         width: 344px;
-        height: 91vh;
+        height: 80vh;
     }
     .para {
         width: 46%;
@@ -445,7 +449,7 @@ ol li a {
         font-size: 3rem;
     }
 }
-
+           /* design mobail */
 @media only screen and (max-width: 375px) {
     .design-top h1 {
         font-size: 1rem;
@@ -481,11 +485,10 @@ ol li a {
         width: 20px;
     }
 }
-
+            /* media project mobail */
 @media only screen and (max-width: 375px) {
     .project-titel {
         font-size: 1rem;
-        color: #9de6ff;
         text-align: center;
     }
     .cardone p {
@@ -508,7 +511,7 @@ ol li a {
         height: 20vh;
     }
 }
-
+             /* media about me mobail */
 @media only screen and (max-width: 375px) {
     .about-card {
         flex-direction: column;
@@ -520,11 +523,16 @@ ol li a {
         margin-left: 5rem;
     }
     .para h1 {
+        width: 100%;
+        height: 12vh;
         font-size: 1rem;
+        text-align: center;
         margin-bottom: 0rem;
+        animation: text_box 8s ease infinite;
+
     }
     .para {
-        width: 80%;
+        width: 100%;
         font-size: 10px;
         margin-top: 1rem;
         margin: 0 auto;
@@ -536,13 +544,16 @@ ol li a {
         padding: 4px;
     }
 }
-
+              /* media form or contact mobial */
 @media only screen and (max-width: 375px) {
     .form {
         flex-direction: column;
     }
+    .form-titel {
+        font-size: 1rem;
+    }
     #form .forme {
-        padding: 10px 0px;
+        padding: 25px 9px;
     }
     .forme-message {
         padding: 40px 40px;
@@ -556,11 +567,9 @@ ol li a {
     .forme-botten {
         width: 50%;
     }
-    .form-titel {
-        font-size: 1rem;
-    }
+    
 }
-
+            /* media form or contact tabl */
 @media only screen and (max-width: 768px) {
     .form-titel {
         font-size: 3rem;
@@ -568,8 +577,18 @@ ol li a {
     #footer {
         margin-top: 1rem;
     }
+    ol li a {
+        font-size: 15px;
+    }
+    .fa {
+        font-size: 32px;
+        padding-right: 15px;
+    }
+    .icones h1{
+        font-size: 15px;
+    }
 }
-
+            /* media navbar header mobail */
 @media only screen and (max-width: 375px) {
     .logo {
         width: 60px;

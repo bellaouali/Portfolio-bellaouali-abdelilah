@@ -14,9 +14,8 @@
 <body>
 
     <!-- star header -->
-    <section id="navbar">
+    <nav id="navbar">
         <img src="img/logo.jpg" alt="img" class="logo">
-
         <div class="nav">
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle" />
@@ -30,8 +29,7 @@
                 </ul>
             </div>
         </div>
-
-    </section>
+    </nav>
     <!-- the and header -->
 
     <!-- star hero section -->
@@ -41,7 +39,7 @@
                 <h1>Hello!!<span></span></h1>
                 <h1>I am Abdelilh<span></span></h1>
                 <h1>My First Portfolio<span></span></h1>
-                <a href="#" type="button" class="botton">Portfoilo</a>
+                <button type="button" class="botton">Portfoilo</button>
             </div>
         </div>
     </section>
@@ -122,7 +120,10 @@
                 <img src="img/img.jpg" alt="" class="image">
             </div>
             <div class="para">
-                <h1>About me</h1>
+                <h1>About{
+                    Me:100%;
+                    }
+                </h1>
                 <p>User experience (UX) design is all about how to control (or at least influence) the way
                     users.
                 </p>
@@ -143,7 +144,7 @@
 
             <div class="form">
                 <label for="email"></label>
-                <input type="email" class="forme" id="email" name="email" placeholder="Email address"></br>
+                <input type="email" class="forme" id="email" name="email" placeholder="Email address">
 
                 <label for="tel"></label>
                 <input type="tel" class="forme" id="tel" name="tel" placeholder="Phone number">
@@ -164,23 +165,25 @@
             </div>
 
             <!-- star footer -->
-            <footer id="footer" role="footer">
-                <div class="footer-nav">
-                    <ol>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#design">Portfolio</a></li>
-                        <li><a href="#project">Compétences</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#form">Contact</a></li>
-                    </ol>
-                </div>
-                <div class="icones">
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-dribbble"></i>
-                    <i class="fa fa-flickr"></i>
-                    <i class="fa fa-github"></i>
-                    <P>Copyright © 2021. by abdelilah</P>
+            <footer>
+                <div id="footer">
+                    <div class="footer-nav">
+                        <ol>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#design">Portfolio</a></li>
+                            <li><a href="#project">Compétences</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#form">Contact</a></li>
+                        </ol>
+                    </div>
+                    <div class="icones">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-dribbble"></i>
+                        <i class="fa fa-flickr"></i>
+                        <i class="fa fa-github"></i>
+                        <h1>Copyright © 2021. by abdelilah</h1>
+                    </div>
                 </div>
             </footer>
         </form>
