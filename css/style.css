@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
+    margin: auto;
     background-color: #F5F9FB;
     font-family: 'Cairo', sans-serif;
 }
@@ -82,22 +82,13 @@ label {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: auto;
+    align-items: center;
 }
 
-#hero {
-    /* image hero */
-    width: 100%;
-    height: 100vh;
-    background-image: url(/img/img1.png);
-    background-position: top center;
-    background-size: cover;
-}
+/* text hero */
 
 #hero h1 {
-    /* text hero */
     position: relative;
     width: fit-content;
     color: #0071AC;
@@ -105,28 +96,15 @@ label {
     font-size: 1.7rem;
 }
 
+/*  parent span animation text and time */
+
 #hero h1 span {
-    /*  parent span animation text and time */
     position: absolute;
-    height: 6vh;
+    height: 5vh;
     width: 100%;
     border-radius: 10px;
     background-color: #D3F1FA;
-    animation: text_box 10s ease infinite;
-}
-
-/* animation time for span text  */
-
-#hero h1:nth-child(1) span {
-    animation-delay: 1s;
-}
-
-#hero h1:nth-child(2) span {
-    animation-delay: 2s;
-}
-
-#hero h1:nth-child(3) span {
-    animation-delay: 3s;
+    animation: text_box 2s ease infinite;
 }
 
 /* animation span  */
@@ -134,16 +112,16 @@ label {
 @keyframes text_box {
     100% {
         width: 100%;
-        left: 0;
     }
     50% {
-        width: 0;
+        width: 50%;
         left: 100%;
     }
 }
 
+/* botton portfoloi */
+
 #hero .botton {
-    /* botton portfoloi */
     cursor: pointer;
     border: 1px solid #0071AC;
     background-color: #D3F1FA;
@@ -164,10 +142,17 @@ label {
 /* star design section  */
 
 .container {
+    background-color: rgb(166, 205, 212);
     width: 100%;
     height: 100vh;
-    background-position: center;
-    background-size: cover;
+    margin: auto;
+}
+
+#design-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .design-top h1 {
@@ -192,7 +177,6 @@ label {
 .design-bottom {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
 }
 
 .firstLine {
@@ -228,23 +212,17 @@ label {
 
 /* star project section */
 
-.container {
-    /* image hero */
-    width: 100%;
-    height: 100vh;
-    background-position: top center;
-    background-size: cover;
-}
-
-.project-top {
-    margin-top: 3rem;
+#project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .project-titel {
-    font-size: 8rem;
-    color: #0071AC;
     text-align: center;
-    animation: text_box 8s ease infinite;
+    color: #0071AC;
+    font-size: 8rem;
 }
 
 .project-buttem {
@@ -255,12 +233,14 @@ label {
 }
 
 .cardone h1 {
-    height: 10vh;
+    height: 7vh;
     text-align: center;
     color: #0071AC;
     background-color: #c1edfc;
     font-size: xx-large;
     margin-bottom: 5px;
+    animation: text_box 8s ease infinite;
+
 }
 
 .cardone p {
@@ -273,26 +253,26 @@ label {
 
 .project-img img {
     width: 100%;
-    height: 32vh;
+    height: 30vh;
 }
 
 /* star about me */
 
-.container {
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-
-.about-card {
+#about {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .image {
     height: 80vh;
-    margin-top: 3rem;
+    margin-top: 8rem;
     margin-left: 5rem;
+}
+
+.about-card {
+    display: flex;
 }
 
 .para {
@@ -302,20 +282,20 @@ label {
 }
 
 .para h1 {
-    font-size: 8rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
     color: #0071AC;
+    animation: text_box 8s ease infinite;
 }
 
 /* the and section about me */
 
 /* star the contact me */
 
-.container {
-    width: 100%;
-    height: 100vh;
-    background-position: top center;
-    background-size: cover;
+#form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .form-titel {
@@ -325,28 +305,26 @@ label {
     animation: text_box 8s ease infinite;
 }
 
-.form {
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 1rem;
-}
-
 #form .forme {
-    width: 100%;
+    margin-top: 10PX;
+    width: 80%;
     padding: 22px 20px;
+    margin-left: 5rem;
 }
 
 .forme-message {
-    width: 100%;
+    margin-top: 10PX;
+    width: 80%;
     padding: 40px 20px;
+    margin-left: 5rem;
 }
 
 .forme-botten {
-    width: 30%;
+    width: 20%;
+    margin-top: 1rem;
     padding: 22px;
     cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: 5rem;
 }
 
 .forme-botten:hover {
@@ -354,34 +332,34 @@ label {
 }
 
 #footer {
+    width: 82%;
     display: flex;
     justify-content: space-between;
-    margin-top: 7rem;
+    margin-top: 2rem;
     margin-left: 5rem;
-    width: 87%;
 }
 
 ol {
     display: flex;
-    margin-top: 2rem;
 }
 
 ol li {
     padding: 10px;
     list-style: none;
+    font-size: 43px;
 }
 
 ol li a {
     color: black;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .fa {
     cursor: pointer;
     font-size: 40px;
     color: #0071AC;
-    padding-right: 28px;
+    padding-right: 25px;
 }
 
 .fa:hover {
@@ -390,38 +368,31 @@ ol li a {
 }
 
 /* star the media qy */
-           /* design tabl */
+
+/* design tabl */
+
 @media only screen and (max-width: 768px) {
     .design-bottom {
         flex-direction: column;
     }
     .firstLine {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .design-top h1 {
         font-size: 3rem;
     }
     .design-top p {
         width: 80%;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
-           /* media project tabl */
+
+/* media project tabl */
+
 @media only screen and (max-width: 768px) {
     .project-titel {
-        margin-top: 1rem;
         font-size: 3rem;
         margin-bottom: 2rem;
-    }
-    .project-img img {
-        width: 100%;
-        height: 40vh;
-    }
-    .cardone p {
-        height: 30vh;
-        background-color: #c1edfc;
-        font-size: x-large;
-        text-align: center;
     }
 }
 
@@ -433,36 +404,38 @@ ol li a {
         padding-right: 0px;
     }
 }
-           /* media about me tabl */
+
+/* media about me tabl */
+
 @media only screen and (max-width: 768px) {
     .image {
         margin-left: 2rem;
         width: 344px;
         height: 80vh;
-    }
-    .para {
-        width: 46%;
-        font-size: 2.5rem;
-        margin-top: 11rem;
+        margin-top: 1rem;
     }
     .para h1 {
         font-size: 3rem;
     }
+    .para p{
+        FONT-SIZE: 2REM;
+
+    }
 }
-           /* design mobail */
+
+/* design mobail */
+
 @media only screen and (max-width: 375px) {
     .design-top h1 {
         font-size: 1rem;
     }
     .design-top p {
-        width: 86%;
+        width: 75%;
         font-size: 10px;
-        text-align: center;
-        margin: 0 auto;
     }
     .design-item h2 {
         text-align: center;
-        margin-top: 0rem;
+        margin-top: -1rem;
         font-size: 10px;
     }
     .design-item p {
@@ -477,19 +450,34 @@ ol li a {
     .design-item {
         margin-bottom: 5px;
         width: 80%;
-        margin-left: 2rem;
-        height: 21vh;
+        margin-left: 2.4rem;
+        height: 18vh;
     }
-    .project-img img {
-        height: 20px;
-        width: 20px;
+    .fas {
+        cursor: pointer;
+        font-size: 20px;
+        color: #0071AC;
+        padding-right: 10px;
+    }
+    .fas:hover {
+        font-size: 50px;
+        color: #002d46;
     }
 }
-            /* media project mobail */
+
+/* media project mobail */
+
 @media only screen and (max-width: 375px) {
+    #project {
+        display: flex;
+        justify-content: unset;
+    }
     .project-titel {
         font-size: 1rem;
         text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
     }
     .cardone p {
         background-color: #c1edfc;
@@ -504,14 +492,15 @@ ol li a {
     .project-buttem {
         flex-direction: column;
         width: 80%;
-        margin: 0 auto;
     }
     .project-img img {
         width: 100%;
         height: 20vh;
     }
 }
-             /* media about me mobail */
+
+/* media about me mobail */
+
 @media only screen and (max-width: 375px) {
     .about-card {
         flex-direction: column;
@@ -519,22 +508,18 @@ ol li a {
     }
     .image {
         width: 197px;
-        height: 405px;
+        height: 50vh;
         margin-left: 5rem;
     }
     .para h1 {
-        width: 100%;
-        height: 12vh;
         font-size: 1rem;
-        text-align: center;
         margin-bottom: 0rem;
         animation: text_box 8s ease infinite;
-
+    }
+    .para p {
+        font-size: 1.5rem;
     }
     .para {
-        width: 100%;
-        font-size: 10px;
-        margin-top: 1rem;
         margin: 0 auto;
     }
 }
@@ -544,32 +529,9 @@ ol li a {
         padding: 4px;
     }
 }
-              /* media form or contact mobial */
-@media only screen and (max-width: 375px) {
-    .form {
-        flex-direction: column;
-    }
-    .form-titel {
-        font-size: 1rem;
-    }
-    #form .forme {
-        padding: 25px 9px;
-    }
-    .forme-message {
-        padding: 40px 40px;
-    }
-    .forme-botten {
-        margin-left: 1px;
-    }
-    #footer {
-        display: none;
-    }
-    .forme-botten {
-        width: 50%;
-    }
-    
-}
-            /* media form or contact tabl */
+
+/* media form or contact tabl */
+
 @media only screen and (max-width: 768px) {
     .form-titel {
         font-size: 3rem;
@@ -580,25 +542,61 @@ ol li a {
     ol li a {
         font-size: 15px;
     }
+    ol li {
+        list-style: none;
+        font-size: 40px;
+    }
     .fa {
         font-size: 32px;
         padding-right: 15px;
     }
-    .icones h1{
+    .icones h1 {
         font-size: 15px;
     }
 }
-            /* media navbar header mobail */
+
+/* media form or contact mobial */
+
+@media only screen and (max-width: 375px) {
+    .form {
+        flex-direction: column;
+    }
+    .form-titel {
+        font-size: 1rem;
+    }
+    #form .forme {
+        margin-top: 10px;
+        width: 90%;
+        padding: 22px 20px;
+        margin-left: 1rem;
+    }
+    .forme-message {
+        padding: 40px 40px;
+        margin-top: 10PX;
+        width: 90%;
+        margin-left: 1rem;
+    }
+    .forme-botten {
+        width: 50%;
+        margin-left: 17px;
+    }
+    #footer {
+        display: none;
+    }
+}
+
+/* media navbar header mobail */
+
 @media only screen and (max-width: 375px) {
     .logo {
         width: 60px;
-        height: 4rem;
+        height: 2rem;
     }
     label {
         display: block;
         cursor: pointer;
-        margin: 0PX 20px 0 0;
-        font-size: 40px;
+        margin: -5PX 35px 0 0;
+        font-size: 34px;
     }
     .menu {
         text-align: center;
@@ -622,5 +620,10 @@ ol li a {
     }
     #hero .container {
         display: none;
+    }
+    #navbar {
+        HEIGHT: 5VH;
+        display: flex;
+        justify-content: space-between;
     }
 }
