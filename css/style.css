@@ -142,7 +142,7 @@ label {
 /* star design section  */
 
 .container {
-    background-color: rgb(166, 205, 212);
+    background-color: #E2F5FF;
     width: 100%;
     height: 100vh;
     margin: auto;
@@ -240,7 +240,6 @@ label {
     font-size: xx-large;
     margin-bottom: 5px;
     animation: text_box 8s ease infinite;
-
 }
 
 .cardone p {
@@ -282,10 +281,16 @@ label {
 }
 
 .para h1 {
+    height: 5vh;
     font-size: 4rem;
     margin-bottom: 3rem;
     color: #0071AC;
     animation: text_box 8s ease infinite;
+}
+.para p {
+    margin-top: 19rem;
+    font-size: 2rem;
+   
 }
 
 /* the and section about me */
@@ -307,14 +312,14 @@ label {
 
 #form .forme {
     margin-top: 10PX;
-    width: 80%;
+    width: 90%;
     padding: 22px 20px;
     margin-left: 5rem;
 }
 
 .forme-message {
     margin-top: 10PX;
-    width: 80%;
+    width: 90%;
     padding: 40px 20px;
     margin-left: 5rem;
 }
@@ -332,7 +337,7 @@ label {
 }
 
 #footer {
-    width: 82%;
+    width: 92%;
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
@@ -417,9 +422,8 @@ ol li a {
     .para h1 {
         font-size: 3rem;
     }
-    .para p{
-        FONT-SIZE: 2REM;
-
+    .para p {
+        FONT-SIZE: 1REM;
     }
 }
 
@@ -477,7 +481,6 @@ ol li a {
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 1rem;
-
     }
     .cardone p {
         background-color: #c1edfc;
@@ -507,22 +510,25 @@ ol li a {
         flex-direction: column-reverse;
     }
     .image {
-        width: 197px;
+        width: 265px;
         height: 50vh;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
     .para h1 {
         font-size: 1rem;
         margin-bottom: 0rem;
         animation: text_box 8s ease infinite;
-    }
-    .para p {
-        font-size: 1.5rem;
-    }
-    .para {
+           
+        }
+    
+     #about .para p {
+        width: 80%;
+        margin-top: 1rem;
+        font-size: 10px;
         margin: 0 auto;
+
     }
-}
+}   
 
 @media only screen and (max-width: 768px) {
     ol li {
@@ -537,7 +543,17 @@ ol li a {
         font-size: 3rem;
     }
     #footer {
+        width: 82%;
         margin-top: 1rem;
+    }
+    .forme-message {
+        width: 81%;
+    }
+    #form .forme {
+        margin-top: 10PX;
+        width: 81%;
+        padding: 22px 20px;
+        margin-left: 5rem;
     }
     ol li a {
         font-size: 15px;
@@ -549,9 +565,6 @@ ol li a {
     .fa {
         font-size: 32px;
         padding-right: 15px;
-    }
-    .icones h1 {
-        font-size: 15px;
     }
 }
 
@@ -577,11 +590,30 @@ ol li a {
         margin-left: 1rem;
     }
     .forme-botten {
-        width: 50%;
+        width: 30%;
         margin-left: 17px;
+        margin-top: 1rem;
+        padding: 9px;
+        cursor: pointer;
+    }
+    ol li {
+        font-size: 31px;
+    }
+    ol li a {
+        font-size: 7px;
+    }
+    .icones p {
+        font-size: 10px;
+    }
+    .fa {
+        font-size: 18px;
+        padding-right: 6px;
     }
     #footer {
-        display: none;
+        width: 82%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2rem;
     }
 }
 
@@ -594,9 +626,7 @@ ol li a {
     }
     label {
         display: block;
-        cursor: pointer;
-        margin: -5PX 35px 0 0;
-        font-size: 34px;
+        margin: -5PX 5px 0 0;
     }
     .menu {
         text-align: center;
@@ -614,11 +644,13 @@ ol li a {
         display: flex;
         flex-direction: column;
     }
-    ul li a {
-        font-size: 23px;
-        padding: 0px 66px;
+    ul li {
+        padding: 1px;
     }
-    #hero .container {
+    ul li a {
+        font-size: 10px;
+    }
+    #hero h1 span {
         display: none;
     }
     #navbar {
