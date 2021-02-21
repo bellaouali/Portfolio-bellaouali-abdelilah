@@ -158,7 +158,7 @@ label {
 .design-top h1 {
     color: #0071AC;
     text-align: center;
-    font-size: 8rem;
+    font-size: 6rem;
     animation: text_box 8s ease infinite;
 }
 
@@ -193,7 +193,7 @@ label {
 
 .design-item p {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .fas {
@@ -222,7 +222,7 @@ label {
 .project-titel {
     text-align: center;
     color: #0071AC;
-    font-size: 8rem;
+    font-size: 6rem;
 }
 
 .project-buttem {
@@ -282,14 +282,14 @@ label {
 
 .para h1 {
     height: 5vh;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
     color: #0071AC;
     animation: text_box 8s ease infinite;
 }
 .para p {
-    margin-top: 19rem;
-    font-size: 2rem;
+    margin-top: 13rem;
+    font-size: 1.5rem;
    
 }
 
@@ -306,7 +306,8 @@ label {
 .form-titel {
     text-align: center;
     color: #0071AC;
-    font-size: 8rem;
+    font-size: 6rem;
+    margin-top: 2rem;
     animation: text_box 8s ease infinite;
 }
 
