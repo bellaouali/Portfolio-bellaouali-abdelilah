@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -44,6 +48,7 @@ label {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 9;
 }
 
 ul {
@@ -73,7 +78,6 @@ label {
     margin: 20PX 40px 0 0;
     font-size: 40px;
 }
-
 
 /* the and header */
 
@@ -288,10 +292,10 @@ label {
     color: #0071AC;
     animation: text_box 8s ease infinite;
 }
+
 .para p {
     margin-top: 13rem;
     font-size: 1.5rem;
-   
 }
 
 /* the and section about me */
@@ -520,17 +524,14 @@ ol li a {
         font-size: 1rem;
         margin-bottom: 0rem;
         animation: text_box 8s ease infinite;
-           
-        }
-    
-     #about .para p {
+    }
+    #about .para p {
         width: 80%;
         margin-top: 1rem;
         font-size: 10px;
         margin: 0 auto;
-
     }
-}   
+}
 
 @media only screen and (max-width: 768px) {
     ol li {
@@ -661,4 +662,3 @@ ol li a {
         justify-content: space-between;
     }
 }
-
